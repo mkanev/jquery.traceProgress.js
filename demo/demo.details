@@ -5,6 +5,5 @@
       - Maksim Kanev
     resources:
       - https://raw.github.com/mkanev/trace-progress/master/assets/js/jquery.traceProgress.min.js
-      - https://raw.github.com/mkanev/trace-progress/master/assets/css/style.min.css
     normalize_css: no
 ...

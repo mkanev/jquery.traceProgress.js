@@ -7,12 +7,12 @@
             , hintFontSize: 14 //
             , hintFontColor: 'ecf0f1' //
             , hintBackgroundColor: '27ae60' //
+            , hintInvalidBackgroundColor: 'd35400' //
             , hintPaddingTop: 4 //
             , hintPaddingRight: 12 //
             , hintPaddingBottom: 6 //
             , hintPaddingLeft: 8 //
             , traceRequired: true //
-            , hintInvalidClass: 'hintInvalid' //
             , showHelper: true //
             , showProgressBar: true //
         };
@@ -30,9 +30,9 @@
                 ;
             var curTop = $this.offset().top //
                 , curLeft = $this.offset().left //
-                , hintHtml = $('<div class=\"hintHolder\">' + //
+                , hintHtml = $('<div class=\"hintHolder\" style=\"position: absolute; text-align: justify; border-radius: 3.1875px;\">' + //
                     '<span class=\"hintHelper\" style=\"display: ' + (pluginOptions.showHelper ? 'block' : 'none') + '\">' + progressHint + '</span>' + //
-                    '<span class=\"hintProgress\" style=\"display: ' + (pluginOptions.showProgressBar ? 'block' : 'none') + '\">Progress: ' + (idx / hintCount * 100) + '%</span>' + //
+                    '<span class=\"hintProgress\" style=\"text-align: right; display: ' + (pluginOptions.showProgressBar ? 'block' : 'none') + '\">Progress: ' + (idx / hintCount * 100) + '%</span>' + //
                     '</div>') //
                 ;
             var hintLeft = curLeft + $this.outerWidth() + pluginOptions.hintOffset //
@@ -59,10 +59,10 @@
             $this.on('focusout', function (eventObject) {
                 var fieldValue = $(eventObject.target).val();
                 if (pluginOptions.traceRequired && isRequired && fieldValue.length === 0) {
-                    hintHtml.addClass(pluginOptions.hintInvalidClass);
+                    hintHtml.css('background-color', '#' + pluginOptions.hintInvalidBackgroundColor);
                     return;
                 }
-                hintHtml.removeClass(pluginOptions.hintInvalidClass);
+                hintHtml.css('background-color', '#' + pluginOptions.hintBackgroundColor);
                 hintHtml.hide();
             });
         });
