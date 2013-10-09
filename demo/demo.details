@@ -4,6 +4,6 @@
     authors:
       - Maksim Kanev
     resources:
-      - https://github.com/mkanev/trace-progress/blob/master/assets/js/jquery.trace.progress.min.js
+      - https://raw.github.com/mkanev/trace-progress/master/assets/js/jquery.trace.progress.min.js
     normalize_css: no
 ...
