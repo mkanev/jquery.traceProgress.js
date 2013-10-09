@@ -1,0 +1,31 @@
+html,
+body {
+    background: #ecf0f1;
+}
+
+#someForm {
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+.hintHolder {
+    position: absolute;
+    text-align: justify;
+    border-radius: 3.1875px;
+}
+
+.hintInvalid {
+    background-color: #d35400 !important;
+}
+
+.hintProgress {
+    text-align: right;
+}
