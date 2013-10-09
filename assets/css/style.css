@@ -1,0 +1,13 @@
+.hintHolder {
+    position: absolute;
+    text-align: justify;
+    border-radius: 3.1875px;
+}
+
+.hintInvalid {
+    background-color: #d35400 !important;
+}
+
+.hintProgress {
+    text-align: right;
+}
