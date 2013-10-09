@@ -1,9 +1,3 @@
-/**
- * Created with JetBrains WebStorm.
- * User: Maksim.Kanev
- * Date: 07.10.13
- * Time: 12:59
- */
 (function ($) {
     var pluginName = 'traceProgress'
         , _defaults = {
