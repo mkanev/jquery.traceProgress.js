@@ -1,0 +1,9 @@
+---
+    name: TraceProgress jQuery Plugin Demo
+    description: A jQuery plugin that gives users real time hints & progress updates as they complete forms
+    authors:
+      - Maksim Kanev
+    resources:
+      - https://github.com/mkanev/trace-progress/blob/master/assets/js/jquery.trace.progress.min.js
+    normalize_css: no
+...

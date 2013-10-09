@@ -3,7 +3,6 @@
  * User: Maksim.Kanev
  * Date: 07.10.13
  * Time: 12:59
- * To change this template use File | Settings | File Templates.
  */
 (function ($) {
     var pluginName = 'traceProgress'
